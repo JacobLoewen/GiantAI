@@ -43,7 +43,6 @@ public class GiantZombie extends EntityGiantZombie {
     public void doUpdate() {
         try {
             EntityPlayer nearestPlayer = world.getClosestPlayerToEntity(this, 1000);
-//                nearestPlayer.sendMessage(new TextComponentString("Iteration"));
             if (nearestPlayer != null) {
                 if (!nearestPlayer.isDead) {
                     double distanceToPlayer = this.getDistanceSq(nearestPlayer);
